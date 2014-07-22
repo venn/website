@@ -2,7 +2,11 @@
 
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-var app = new EmberApp();
+var app = new EmberApp({
+  autoprefixer: {
+    browsers: ['last 2 ios version']
+  }
+});
 
 app.import('vendor/emberui/dist/named-amd/emberui.js', {
     'emberui': ['default']

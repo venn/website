@@ -1,0 +1,39 @@
+.homepage-banner {
+  background: #292c38;
+  height: 500px;
+  text-align: center;
+  color: #ffffff;
+  padding: 100px 0 0 0;
+
+  .logo {
+    display: inline-block;
+    background: rgba(0,0,0,0.2);
+    width: 150px;
+    height: 60px;
+    margin: 15px 0 40px 0;
+  }
+
+  p {
+    color: #cfd3e2;
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 20px;
+    -webkit-animation: homepage-banner-fadein 1s 1;
+  }
+
+  h1 {
+    -webkit-animation: homepage-banner-fadein 1s 1;
+  }
+}
+
+
+@-webkit-keyframes homepage-banner-fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

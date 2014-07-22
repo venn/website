@@ -1,0 +1,22 @@
+html {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #1787e5;
+  transition: color 0.2s;
+
+  &:hover {
+    color: #0864b2;
+  }
+}
+
+h1 {
+  margin: 40px auto;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  max-width: 650px;
+  padding: 0 20px;
+}
