@@ -1,0 +1,79 @@
+.homepage-team {
+  text-align: center;
+  color: #66768a;
+  padding: 60px 0;
+  background: #f5f8f9;
+  text-shadow: 1px 1px #ffffff;
+  border-top: solid 1px #e5edef;
+  border-bottom: solid 1px #e5edef;
+
+  p {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .team {
+    list-style: none;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 60px 20px 0 20px;
+    overflow: auto;
+
+    li {
+      display: inline-block;
+      width: 250px;
+      margin-left: 15px;
+
+      &:first-child {
+        margin-left: 0px;
+      }
+    }
+
+    .image {
+      display: inline-block;
+      border-radius: 50px;
+      width: 100px;
+      height: 100px;
+    }
+
+    h4 {
+      font-size: 16px;
+      color: #485361;
+      margin: 15px 0 0 0;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 0px;
+      margin: 9px 0;
+      padding: 0 10px;
+    }
+
+    .rule {
+      margin-bottom: 12px;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 1px;
+        width: 50px;
+        background: #dae5e8;
+      }
+    }
+
+    .skills {
+      font-size: 13px;
+      line-height: 16px;
+      color: #96a3b5;
+      padding: 0 10px;
+    }
+
+  }
+
+}
