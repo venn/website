@@ -1,0 +1,37 @@
+.work-banner {
+  background: #292c38;
+  height: 500px;
+  text-align: center;
+  color: #ffffff;
+  padding: 100px 0 0 0;
+  position: relative;
+  overflow: hidden;
+
+  p {
+    color: #cfd3e2;
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-weight: 300;
+    -webkit-animation: homepage-banner-fadein 1s 1;
+    position: relative;
+    z-index: 2;
+  }
+
+  h1 {
+    -webkit-animation: homepage-banner-fadein 1s 1;
+    position: relative;
+    z-index: 2;
+  }
+
+  img {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0.2;
+  }
+}

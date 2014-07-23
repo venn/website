@@ -5,6 +5,11 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource('work', { path: '/work' }, function() {
+    this.route('massively');
+    this.route('maintenanceassistant');
+    this.route('guestlist');
+  });
 });
 
 export default Router;
