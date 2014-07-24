@@ -1,0 +1,30 @@
+.guestlist-newevent {
+  max-width: 860px;
+  padding: 0 20px;
+  margin: 70px auto -95px auto;
+  position: relative;
+
+  .caption {
+    position: absolute;
+    left: 430px;
+    top: 65px;
+    width: 250px;
+  }
+}
+
+
+.guestlist-tickets {
+  max-width: 860px;
+  padding: 0 20px;
+  margin: -95px auto -30px auto;
+  position: relative;
+  text-align: right;
+
+  .caption {
+    position: absolute;
+    left: 30px;
+    top: 115px;
+    width: 260px;
+    text-align: right;
+  }
+}

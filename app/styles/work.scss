@@ -146,3 +146,51 @@
   }
 
 }
+
+
+.ipadonright {
+  max-width: 900px;
+  padding: 0 20px;
+  margin: 70px auto 0 auto;
+  overflow: auto;
+  display: table;
+
+  .copy {
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 50px;
+    padding-top: 90px;
+  }
+
+  .image {
+    width: 500px;
+    display: table-cell;
+    position: relative;
+  }
+
+  .ipad {
+    width: 403px;
+    height: 527px;
+    padding: 71px 52px 61px 52px;
+    background: url('/images/frames/ipad-vertical.jpg') no-repeat;
+    background-size: 100%;
+
+    .wrapper {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .caption {
+    position: absolute;
+    text-align: right;
+    left: -270px;
+    width: 220px;
+    margin-top: -180px;
+  }
+}
