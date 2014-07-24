@@ -85,7 +85,7 @@
     line-height: 34px;
     max-width: 340px;
     position: relative;
-    padding-left: 100px;
+    padding-left: 80px;
 
     &:before {
       content: "\201C";
@@ -104,4 +104,45 @@
       margin-top: 25px;
     }
   }
+}
+
+
+.work-bannerimage {
+  height: 500px;
+  background-size: cover !important;
+}
+
+.copywithimageonleft {
+  max-width: 900px;
+  padding: 0 20px;
+  margin: 70px auto;
+  overflow: auto;
+  display: table;
+
+  .image {
+    width: 50%;
+    display: table-cell;
+    position: relative;
+  }
+
+  .copy {
+    width: 50%;
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 20px;
+  }
+
+  &.guestlist {
+    .caption {
+      position: absolute;
+      top: 40px;
+      left: 210px;
+      width: 280px;
+    }
+
+    .copy {
+      padding-top: 190px;
+    }
+  }
+
 }
