@@ -38,7 +38,7 @@
 
       img {
         width: 250px;
-        transition: -webkit-transform 0.15s;
+        transition: transform 0.15s;
       }
     }
 
@@ -60,7 +60,7 @@
       font-size: 14px;
 
       &:hover img {
-        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
       }
     }
   }

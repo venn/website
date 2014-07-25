@@ -22,16 +22,16 @@
     margin: 0 auto;
     padding: 0 20px;
     font-weight: 300;
-    -webkit-animation: homepage-banner-fadein 1s 1;
+    animation: homepage-banner-fadein 1s 1;
   }
 
   h1 {
-    -webkit-animation: homepage-banner-fadein 1s 1;
+    animation: homepage-banner-fadein 1s 1;
   }
 }
 
 
-@-webkit-keyframes homepage-banner-fadein {
+@keyframes homepage-banner-fadein {
   0% {
     opacity: 0;
   }
