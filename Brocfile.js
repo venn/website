@@ -1,27 +1,14 @@
 /* global require, module */
 
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
-var autoprefixer = require('broccoli-autoprefixer');
-var p = require('ember-cli/lib/preprocessors');
-var preprocessCss = p.preprocessCss;
 
-var app = new EmberApp({
-  name: require('./package.json').name,
-
-  minifyCSS: {
-    enabled: true,
-    options: {}
-  },
-
-  getEnvJSON: require('./config/environment')
-});
+var app = new EmberApp();
 
 app.import('vendor/Velocity.js/jquery.velocity.min.js');
-
-// emberui
 app.import('vendor/emberui/dist/named-amd/emberui.js', {
   'emberui': ['default']
 });
+
 app.import('vendor/emberui/dist/emberui.css');
 app.import('vendor/emberui/dist/default-theme.css');
 

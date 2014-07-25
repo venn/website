@@ -2,6 +2,7 @@
 
 var Application = require('venn-website/app')['default'];
 var Router = require('venn-website/router')['default'];
+import Ember from 'ember';
 
 export default function startApp(attrs) {
   var App;
