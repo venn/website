@@ -76,34 +76,6 @@
     vertical-align: middle;
     text-align: right;
   }
-
-  .quote {
-    display: inline-block;
-    text-align: left;
-    font-size: 26px;
-    color: #66768a;
-    line-height: 34px;
-    max-width: 340px;
-    position: relative;
-    padding-left: 80px;
-
-    &:before {
-      content: "\201C";
-      font-size: 72px;
-      margin-left: -32px;
-      margin-top: 12px;
-      position: absolute;
-    }
-
-    &:after {
-      content: "\201D";
-      display: inline-block;
-      font-size: 72px;
-      line-height: 34px;
-      vertical-align: top;
-      margin-top: 25px;
-    }
-  }
 }
 
 
@@ -145,6 +117,21 @@
     }
   }
 
+
+  &.ma {
+    margin-top: 50px;
+
+    .caption {
+      position: absolute;
+      top: 290px;
+      left: 250px;
+      width: 350px;
+    }
+
+    .copy {
+      padding-top: 60px;
+    }
+  }
 }
 
 
@@ -192,5 +179,110 @@
     left: -270px;
     width: 220px;
     margin-top: -180px;
+  }
+}
+
+
+.work-copywithquoteandandroid {
+  max-width: 900px;
+  padding: 0 20px;
+  margin: 70px auto 50px auto;
+  overflow: auto;
+  display: table;
+
+  .column1 {
+    width: 50%;
+    display: table-cell;
+    padding-right: 20px;
+    padding-top: 30px;
+  }
+
+  .column2 {
+    width: 50%;
+    display: table-cell;
+    vertical-align: top;
+    text-align: center;
+
+    .image {
+      display: inline-block;
+      padding: 50px 19px 125px 16px;
+      width: 277px;
+      height: 455px;
+      overflow: hidden;
+      background: url('/images/frames/nexus5-vertical.jpg') no-repeat;
+      background-size: 100% auto;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .quote {
+    float: right;
+    margin-top: 70px;
+    margin-right: -20px;
+    max-width: 360px;
+    padding-left: 0px;
+  }
+}
+
+
+.androidrow {
+  max-width: 900px;
+  padding: 0 20px;
+  margin: 70px auto 0px auto;
+  overflow: auto;
+
+  .image {
+    float: left;
+    width: 175px;
+    height: 287px;
+    overflow: hidden;
+    background: url('/images/frames/nexus5-vertical.jpg') no-repeat;
+    background-size: 100% auto;
+    padding: 32px 12px 80px 10px;
+    margin-right: 37px;
+
+    img {
+      width: 100%;
+    }
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+.copywithimageonleft.ma + .androidrow {
+  padding-top: 80px;
+}
+
+
+.quote {
+  display: inline-block;
+  text-align: left;
+  font-size: 26px;
+  color: #66768a;
+  line-height: 34px;
+  max-width: 340px;
+  position: relative;
+  padding-left: 80px;
+
+  &:before {
+    content: "\201C";
+    font-size: 72px;
+    margin-left: -32px;
+    margin-top: 12px;
+    position: absolute;
+  }
+
+  &:after {
+    content: "\201D";
+    display: inline-block;
+    font-size: 72px;
+    line-height: 34px;
+    vertical-align: top;
+    margin-top: 25px;
   }
 }
