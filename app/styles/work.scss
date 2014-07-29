@@ -228,6 +228,51 @@
 }
 
 
+.work-copywithvideoandquote {
+  max-width: 900px;
+  padding: 0 20px;
+  margin: 70px auto 50px auto;
+  overflow: auto;
+  display: table;
+
+  .column1 {
+    width: 50%;
+    display: table-cell;
+    padding-right: 20px;
+    padding-top: 30px;
+  }
+
+  .column2 {
+    width: 50%;
+    display: table-cell;
+    vertical-align: top;
+    text-align: center;
+
+    .image {
+      display: inline-block;
+      padding: 99px 25px 97px 27px;
+      width: 267px;
+      height: 475px;
+      overflow: hidden;
+      background: url('/images/frames/iphone-vertical.jpg') no-repeat;
+      background-size: 100% auto;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .quote {
+    float: right;
+    margin-top: 70px;
+    margin-right: -20px;
+    max-width: 360px;
+    padding-left: 0px;
+  }
+}
+
+
 .androidrow {
   max-width: 900px;
   padding: 0 20px;
