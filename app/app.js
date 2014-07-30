@@ -10,5 +10,6 @@ var App = Ember.Application.extend({
 });
 
 loadInitializers(App, 'venn-website');
+loadInitializers(App, 'emberui');
 
 export default App;

@@ -4,13 +4,17 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp();
 
+app.import('vendor/ember-listview/list-view.prod.js');
 app.import('vendor/velocity/jquery.velocity.min.js');
 app.import('vendor/emberui/dist/named-amd/emberui.js', {
-  'emberui': ['default']
+  exports: {
+    'emberui': [
+      'default'
+    ]
+  }
 });
 
 app.import('vendor/emberui/dist/emberui.css');
-app.import('vendor/emberui/dist/default-theme.css');
 
 prefixCSS: {
   options: {
