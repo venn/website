@@ -1,1 +1,25 @@
 {{outlet}}
+
+{{#eui-modal open=showContact style="full"}}
+  <div class="modalcontent">
+    <h2>
+      You may use the form below to quickly drop us a note about your project. We can also be reached by email at <a href="mailto:hello@venn.lc">hello@venn.lc</a> or via Twitter at <a href="https://twitter.com/teamvenn" target="_blank">@teamvenn</a>
+    </h2>
+
+    <form>
+      <div class="formrow">
+        {{eui-input width="100%" placeholder="Name"}}
+      </div>
+      <div class="formrow">
+        {{eui-input width="100%" placeholder="Email"}}
+      </div>
+      <div class="formrow">
+        {{eui-textarea width="100%" height="250px" placeholder="Message"}}
+      </div>
+
+      <div class="buttonpanel">
+        {{eui-button label="Send Email" type="submit"}} or <span {{action 'hideContact'}}>Cancel</span>
+      </div>
+    </form>
+  </div>
+{{/eui-modal}}

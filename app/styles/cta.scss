@@ -13,7 +13,15 @@
     font-weight: 300;
   }
 
-  a {
+  span {
     display: block;
+    text-decoration: none;
+    color: #1787e5;
+    transition: color 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      color: #0864b2;
+    }
   }
 }
