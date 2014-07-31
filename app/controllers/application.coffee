@@ -3,6 +3,7 @@
 ApplicationController = Ember.Controller.extend
   showContact: false
   isSending: false
+  isSent: false
 
   name: null
   email: null
