@@ -1,0 +1,212 @@
+@media (max-width: 700px) {
+
+  .homepage-portfolio .casestudies {
+    li {
+      display: block;
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-bottom: 40px;
+      width: 100%;
+    }
+
+    .image {
+      width: 100%;
+      height: 180px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .homepage-team .team {
+    li {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      margin-left: 0px;
+    }
+  }
+
+  .work-banner img {
+    width: auto;
+    height: 100%;
+  }
+
+  .work-copywithquoteandandroid {
+    .column1 {
+      display: block;
+      width: auto;
+      padding: 0px;
+    }
+
+    .column2 {
+      display: block;
+      width: auto;
+      padding: 0px;
+    }
+
+    .quote {
+      padding-left: 20px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .copywithimageonleft {
+    .image {
+      display: block;
+      width: auto;
+    }
+
+    .copy {
+      display: block;
+      width: auto;
+      padding: 0px;
+    }
+
+    &.ma {
+      .caption {
+        position: static;
+        width: 100%;
+      }
+
+      .copy {
+        padding-top: 40px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .copywithimageonleft.ma + .androidrow {
+    padding-top: 0px;
+  }
+
+  .androidrow {
+    .image {
+      display: block;
+      float: none;
+      width: 100%;
+      background-size: auto 100%;
+      background-position: center top;
+      text-align: center;
+
+      img {
+        width: 175px;
+      }
+    }
+  }
+
+  .work-primaryimage {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    background: none;
+    padding: 20px;
+  }
+
+  .work-copywithquote {
+    margin-top: 20px;
+    margin-bottom: 0px;
+
+    .column1 {
+      display: block;
+      width: auto;
+      padding: 0px;
+    }
+
+    .column2 {
+      display: block;
+      width: auto;
+      padding: 0px;
+    }
+
+    .quote {
+      padding-left: 20px;
+      margin-top: 40px;
+    }
+  }
+
+  .guestlist-newevent {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    .caption {
+      position: static;
+      width: 100%;
+    }
+  }
+
+  .work-bannerimage {
+    height: 300px;
+  }
+
+  .guestlist-tickets {
+    margin-top: 40px;
+    overflow: hidden;
+
+    .caption {
+      position: static;
+      width: 100%;
+    }
+  }
+
+  .copywithimageonleft {
+    margin-bottom: 0px;
+    padding-right: 0px;
+
+    &.guestlist {
+      .caption {
+        position: static;
+        width: 100%;
+      }
+
+      .copy {
+        padding-top: 40px;
+      }
+    }
+  }
+
+  .ipadonright {
+    margin-top: 0px;
+    display: block;
+    overflow: hidden;
+    padding: 0px;
+    width: 100%;
+
+    .copy {
+      display: block;
+      width: 100%;
+      padding: 0px 20px;
+    }
+
+    .image {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
+  .work-copywithvideoandquote {
+    margin: 40px 0;
+
+    .column1 {
+      display: block;
+      width: 100%;
+      padding: 0;
+    }
+
+    .column2 {
+      display: block;
+      width: 100%;
+    }
+
+    .quote {
+      margin: 30px 0;
+      padding-left: 20px;
+    }
+  }
+}
