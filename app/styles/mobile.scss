@@ -253,4 +253,15 @@
       transform: scale(0.8);
     }
   }
+
+  .modalcontent {
+    .mobile {
+      display: block;
+      margin-top: 60px;
+    }
+
+    .nomobile {
+      display: none;
+    }
+  }
 }
