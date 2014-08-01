@@ -10,6 +10,10 @@ a {
   &:hover {
     color: #0864b2;
   }
+
+  img {
+    border: none;
+  }
 }
 
 h1 {
@@ -31,4 +35,8 @@ p {
 .caption {
   font-style: italic;
   color: #96a3b5;
+}
+
+.ember-application > div.ember-view:first-of-type {
+  overflow: auto;
 }

@@ -18,6 +18,9 @@ ApplicationRoute = Ember.Route.extend
 
     sendEmail: ->
       controller = @controllerFor 'application'
+
+      return if controller.get 'isInvalid'
+
       controller.set 'isSending', true
 
       form =
