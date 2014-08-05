@@ -1,6 +1,6 @@
-`import Ember from 'ember'`
+`import Em from 'ember'`
 
-ApplicationController = Ember.Controller.extend
+ApplicationController = Em.Controller.extend
   showContact: false
   isSending: false
   isSent: false

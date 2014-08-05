@@ -34,7 +34,7 @@ ApplicationRoute = Ember.Route.extend
         dataType: 'json',
         data: form
 
-      .then (payload) =>
+      .then ->
         controller.set 'isSending', false
 
       , (error) ->
