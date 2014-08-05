@@ -42,5 +42,7 @@ ApplicationRoute = Ember.Route.extend
         alert 'There was an error sending your email. Please send it to us directly at hello@venn.lc'
         Ember.RSVP.reject (try JSON.parse error.jqXHR.responseText) || {}
 
+      @send 'hideContact'
+
 
 `export default ApplicationRoute`
