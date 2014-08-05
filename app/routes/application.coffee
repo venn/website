@@ -24,9 +24,10 @@ ApplicationRoute = Ember.Route.extend
       controller.set 'isSending', true
 
       form =
-        name: controller.get 'name'
-        email: controller.get 'email'
-        message: controller.get 'message'
+        contact:
+          lead_name: controller.get 'name'
+          lead_email: controller.get 'email'
+          message: controller.get 'message'
 
       ajax
         url: "#{window.VennWebsiteENV.API_BASE}/contacts",
