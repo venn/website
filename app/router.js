@@ -1,24 +1,31 @@
 import Ember from 'ember';
+import config from './config/environment';
+import resetScroll from 'website/mixins/reset-scroll';
 
-var Router = Ember.Router.extend({
-  location: VennWebsiteENV.locationType
+const Router = Ember.Router.extend({
+  location: config.locationType,
+  rootURL: config.rootURL,
+
+  didTransition() {
+    this._super(...arguments);
+
+    window.ga('send', 'pageview', {
+      'page': this.get('url'),
+      'title': this.get('url')
+    });
+  }
 });
 
 Router.map(function() {
-  this.resource('work', { path: '/work' }, function() {
+  this.route('work', { path: '/work' }, function() {
     this.route('massively');
     this.route('maintenanceassistant');
     this.route('guestlist');
   });
+  this.route('services');
+  this.route('contact');
 });
 
-Router.reopen({
-  notifyGoogleAnalytics: function() {
-    return window.ga('send', 'pageview', {
-      'page': this.get('url'),
-      'title': this.get('url')
-    });
-  }.on('didTransition')
-});
+Ember.Route.reopen(resetScroll);
 
 export default Router;

@@ -3,26 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Venn</title>
+    <title>Website</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="/images/favicon.png" />
 
-    {{BASE_TAG}}
+    {{content-for "head"}}
 
-    <link rel="stylesheet" href="assets/vendor.css">
-    <link rel="stylesheet" href="assets/venn-website.css">
-  </head>
-  <body>
-    <script>
-      window.VennWebsiteENV = {{ENV}};
-      window.EmberENV = window.VennWebsiteENV.EmberENV;
-    </script>
-    <script src="assets/vendor.js"></script>
-    <script src="assets/venn-website.js"></script>
-    <script>
-      window.VennWebsite = require('venn-website/app')['default'].create(VennWebsiteENV.APP);
-    </script>
+    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/website.css">
+
+    {{content-for "head-footer"}}
 
     <!-- Typekit -->
     <script type="text/javascript" src="//use.typekit.net/bht8srr.js"></script>
@@ -37,5 +27,13 @@
 
       ga('create', 'UA-47040136-1', {'siteSpeedSampleRate': 100});
     </script>
+  </head>
+  <body>
+    {{content-for "body"}}
+
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/website.js"></script>
+
+    {{content-for "body-footer"}}
   </body>
 </html>

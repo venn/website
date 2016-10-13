@@ -1,15 +1,18 @@
 import Ember from 'ember';
-import Resolver from 'ember/resolver';
-import loadInitializers from 'ember/load-initializers';
+import Resolver from './resolver';
+import loadInitializers from 'ember-load-initializers';
+import config from './config/environment';
+
+let App;
 
 Ember.MODEL_FACTORY_INJECTIONS = true;
 
-var App = Ember.Application.extend({
-  modulePrefix: 'venn-website', // TODO: loaded via config
-  Resolver: Resolver
+App = Ember.Application.extend({
+  modulePrefix: config.modulePrefix,
+  podModulePrefix: config.podModulePrefix,
+  Resolver
 });
 
-loadInitializers(App, 'venn-website');
-loadInitializers(App, 'emberui');
+loadInitializers(App, config.modulePrefix);
 
 export default App;
