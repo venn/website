@@ -23,7 +23,6 @@ Router.map(function() {
     this.route('guestlist');
   });
   this.route('services');
-  this.route('contact');
 });
 
 Ember.Route.reopen(resetScroll);
