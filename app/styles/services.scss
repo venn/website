@@ -1,0 +1,78 @@
+.services-banner {
+  background: #292c38;
+  height: 100px;
+  padding-top: 100px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+
+  p {
+    color: #cfd3e2;
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-weight: 300;
+    animation: homepage-banner-fadein 1s 1;
+    position: relative;
+    z-index: 2;
+  }
+
+  h1 {
+    animation: homepage-banner-fadein 1s 1;
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  img {
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    left: 0px;
+    width: 115%;
+    opacity: 0.2;
+  }
+}
+
+.services {
+  padding: 60px 20px 0 20px;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 26px;
+
+  &__service {
+    margin-bottom: 60px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__header {
+    margin: 0;
+  }
+
+  &__price {
+    opacity: 0.5;
+  }
+
+  &__description {
+    margin: 20px 0 0 0;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.sevices-disclaimer {
+  font-size: 13px;
+  opacity: 0.5;
+  padding: 0 20px;
+  text-align: center;
+  margin: 20px 0;
+}

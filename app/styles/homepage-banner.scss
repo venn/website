@@ -19,7 +19,7 @@
     font-size: 18px;
     line-height: 28px;
     max-width: 650px;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     padding: 0 20px;
     font-weight: 300;
     animation: homepage-banner-fadein 1s 1;
@@ -27,6 +27,21 @@
 
   h1 {
     animation: homepage-banner-fadein 1s 1;
+  }
+
+  &--call-to-action {
+    display: inline-block;
+    border-radius: 3px;
+    line-height: 36px;
+    padding: 0 10px;
+    background: #297bbf;
+    color: #ffffff;
+    transition: background 0.2s;
+
+    &:hover {
+      color: #ffffff;
+      background: #1787e5;
+    }
   }
 }
 

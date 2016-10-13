@@ -41,7 +41,8 @@
         border-radius: 5px;
       }
 
-      &:hover:after {
+      &:hover:after,
+      &.active:after {
         width: 100%;
       }
     }
